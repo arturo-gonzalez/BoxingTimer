@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutRounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rounds"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/layoutRounds">
+
+
+
+        <Button
+            android:id="@+id/minusround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick=""
+            android:text="-"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/plusround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/layout1">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutes per round"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutMinutes"
+        android:gravity="center">
+
+
+
+
+        <Button
+            android:id="@+id/minusminute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:onClick=""
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="36sp"/>
+
+        <Button
+            android:id="@+id/plusminute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:onClick="buttonOnClick"
+            android:text="Start"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
